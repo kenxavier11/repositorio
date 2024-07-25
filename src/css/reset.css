@@ -1,9 +1,14 @@
-*{
+* {
     text-decoration: none;
     padding: 0;
     margin: 0;
-    list-style: none;
     box-sizing: border-box;
     overflow: none;
     font-size: 16px;
+    list-style-type: none;
+}
+
+html {
+    width: 100%;
+    background-color: #323234;
 }
