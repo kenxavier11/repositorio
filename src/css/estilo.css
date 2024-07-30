@@ -1,61 +1,85 @@
-
-/* sessao do herder */
-
-header {
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+main{
     width: 100%;
-}
-
-.logo {
+    height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
-    color: #ffffff;
-    transition: 0.3s;
-    padding: 10px;
-    border-radius: 50%;
-    border: #550b02 solid 5px;
-    border-top: 4px;
-    border-left: 10px;
-    border-right: 10px;
-    margin: 10px;
-}
-.logo h1{
-    font-size: 3rem;
-}
-.contato a {
-    color: #ffffff;
-    padding: 30px;
-    font-size: 2rem;
-    transition: 0.3s;   
-}
-a:hover {
-    font-size: 3rem;
-    color: #550b02;
 }
 
-/* sessao da main */
-.conteiner-do-topo{
-    background-color: orange;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+.background-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
 }
-.conteiner-do-centro{
-    background-color: green;
-    display: grid;
+.background-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.conteiner{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 50%;
+    
     
 }
-.conteiner-projeto{
-    background-color: red;
+.conteudo{
+    position: relative;
+    width: 550px;
+    top: 120px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.conteiner-projeto-2{
-    background-color: blue;
+.conteudo h1{
+    font-size: 6rem;
+    padding: 20px 30px;
+
 }
-.conteiner-de-baixo{
-    background-color: yellow;
+.conteudo p{
+    font-size: 1.8rem;
+    padding: 5px;
+}
+.conteudo img{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+    box-shadow: 1px 5px 10px #241a1a;
+}
+.navegacao{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    height: 100%;
+    width: 50%;
+}
+.navegacao ul{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegacao ul li a{
+    padding: 30px;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.navegacao ul li a:hover{
+    color: gold;
+    font-size: 3rem;
 }
